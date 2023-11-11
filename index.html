@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Bootstrap cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- External Link -->
+    <link rel="stylesheet" type="text/css" href="signup.css" />
+
+    <title>API Fetch- Signup</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-header">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: orange; font-size: 25px; font-weight: bold"
+          >API Fetch Data</a
+        >
+        <span class="ml-auto">
+          <b class="accountmsg" style="color: orange"
+            >Already Have Account Click to</b
+          >
+          <a href="./login.html"
+            ><button class="btn btn-primary">Login</button></a
+          ></span
+        >
+      </div>
+    </nav>
+    <!-- Navbar -End -->
+
+    <!-- Body Start -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="login-box form-container">
+            <h1 class="text-center text-white">Signup</h1>
+            <form id="signup-form">
+              <div class="form-group m-2">
+                <b><label class="text-white" for="username">Name:</label></b>
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  id="username"
+                  required
+                />
+              </div>
+              <div class="form-group m-2">
+                <b><label class="text-white" for="userEmail">Email:</label></b>
+                <input
+                  type="email"
+                  class="form-control mt-2"
+                  id="userEmail"
+                  required
+                />
+              </div>
+              <div class="form-group m-2">
+                <b
+                  ><label class="text-white" for="userMobile"
+                    >Mobile Number:</label
+                  ></b
+                >
+                <input
+                  type="number"
+                  class="form-control mt-2"
+                  id="userMobile"
+                  required
+                />
+              </div>
+              <div class="form-group m-2">
+                <b
+                  ><label class="text-white" for="password">Password:</label></b
+                >
+                <input
+                  type="password"
+                  class="form-control mt-2"
+                  id="password"
+                  required
+                />
+                <div id="password-strength" class="mt-2">
+                  <span class="text-white" style="font-weight: bold"
+                    >Password Strength:</span
+                  >
+                  <span id="strength-text"></span>
+                </div>
+              </div>
+              <div class="text-center mt-2">
+                <button
+                  type="submit"
+                  style="font-size: 25px"
+                  class="btn btn-success mt-2 btn-block"
+                >
+                  Signup
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Body End -->
+
+    <!-- Footer Start -->
+    <footer class="py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-user text-dark me-2"></i> Copyright © <img className="text-center" src="/assets/swastic kumar.png" alt="logo" style="width:100px"/>
+              </a>
+             2023
+              </li>
+              <li>
+                <i class="fab fa-github text-warning mt-2 me-2"></i>
+                <a style="text-decoration: none; color: white;" href="https://github.com/SwasticKumar" target="_blank">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <i class="fab fa-linkedin text-primary bg-white mt-2 me-2"></i>
+                <a style="text-decoration: none; color: white;"
+                  href="https://www.linkedin.com/in/swastic-kumar-a56910157/"
+                  target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8 text-end">
+            <ul class="list-unstyled">
+              <li >
+                <i  class="far fa-envelope text-primary me-2"></i> kswastic@gmail.com
+              </li >
+              <li class="me-4 mt-2 "><i class="fas fa-phone text-primary me-2"></i> +91 9876543201</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Bootstrap js cnd -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Js External File -->
+    <script src="./signup.js"></script>
+  </body>
+</html>
